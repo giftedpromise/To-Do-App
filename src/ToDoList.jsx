@@ -11,7 +11,8 @@ import {
 export const ToDoList = () => {
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState("");
- 
+  const [editIndex, setEditIndex] = useState(null);
+  const [editValue, setEditValue] = useState("");
 
   // Add new item to the list
   const addItem = () => {
